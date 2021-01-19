@@ -112,6 +112,65 @@
             text-decoration: underline;
         }
 
+        footer{
+            position:fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(242, 242, 242);
+            color: rgb(32, 33, 36);
+        }
+        #country > p{
+            font-size: 13px;
+            padding-left: 20px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin: 0px;
+            border: 1px solid lightgray;
+        }
+        #footer-links{
+            display: flex;
+            
+        }
+         #first-list, #second-list{
+             display: flex;
+             font-size: 13px;
+             list-style-type: none;
+             margin: 0;
+             padding: 7px;
+             
+         }
+         #first-list{
+             float: left;
+         }
+         #second-list{
+             float:right;
+             margin: 0 0 0 auto;
+         }
+
+         #first-list > li, #second-list > li{
+            padding-left: 15px;
+            padding-right: 15px;
+         }
+        
+        .footer-links{
+            text-decoration: none;
+            color: rgb(32, 33, 36);
+        }
+
+        .footer-links:hover{
+            text-decoration: underline;
+        }
+        @media (max-width: 680px){
+            #footer-links{
+                flex-direction: column;
+                flex-flow: column-reverse;
+                align-items: center;
+            }
+            #second-list{
+                margin: 0;
+            }
+        }
 
 
     </style>
@@ -145,15 +204,15 @@
         </div>
         <nav id="footer-links">
             <ul id="first-list">
-                <li><a href="#blank" class="footer-links">Privacy</a></li>
-                <li><a href="#blank" class="footer-links">Terms</a></li>
-                <li><a href="#blank" class="footer-links">Settings</a></li>
-            </ul>
-            <ul id="second-list">
                 <li><a href="#blank" class="footer-links">Advertising</a></li>
                 <li><a href="#blank" class="footer-links">Business</a></li>
                 <li><a href="#blank" class="footer-links">About</a></li>
                 <li><a href="#blank" class="footer-links">How Search works</a></li>
+            </ul>
+            <ul id="second-list">
+                <li><a href="#blank" class="footer-links">Privacy</a></li>
+                <li><a href="#blank" class="footer-links">Terms</a></li>
+                <li><a href="#blank" class="footer-links">Settings</a></li>
             </ul>
         </nav>
     </footer>
