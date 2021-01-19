@@ -60,26 +60,56 @@
         #google-logo{
             height: 92px;
             width: 272px;
-            padding: 5%;
+            padding: 20px;
+            
         }
         #container{
             display: flex;
             flex-direction: column;
             padding: 10% 10%;
             align-items: center;
+            justify-content: center;
         }
 
-        input{
-            
+        #search{
+            display: block;
+            border-radius: 100px;
+            padding: 10px;
+            width: 400px;
+            border: 5px thin red;
         }
 
         #buttons{
             display: flex;
+            justify-content: center;
+            padding: 10px;
             
         }
 
-        p{
+        button{
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            padding: 10px;
+        }
+        button:hover{
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            border: 1px solid #dadce0;
+        }
+
+        #language{
             font-size: 13px;
+            text-align: center;
+        }
+
+        #language > a{
+            text-decoration: none;
+        }
+
+        #language > a:hover{
+            text-decoration: underline;
         }
 
 
@@ -99,12 +129,12 @@
     <main id="container">
         <img src="googlelogo.png" id="google-logo">
         <form id="search-form">
-            <input type="text">
+            <input type="text" role="combobox" id="search">
             <div id="buttons">
                 <button type="submit">Google Search</button>
                 <button type="submit">I'm Feeling Lucky</button>
             </div>
-            <p>
+            <p id="language">
                 Google offered in: <a href="#blank">Filipino</a> <a href="blank">Cebuano</a>
             </p>
         </form>
