@@ -1,0 +1,98 @@
+<html>
+    <style>
+        body{
+            font-family: arial,sans-serif;
+        }
+        header{
+            top: 16px;
+        }
+        #navbar{
+            height: 20px;
+            min-width:183px;
+            float: right;            
+            font-size: 12px;
+            padding:10px 0;
+        }
+
+        #header-links{
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-links{
+            text-decoration: none;
+            color: black;
+        }
+
+        #boxes-logo{
+            height: 12px;
+            width:auto;
+            opacity: 0.5;
+
+        }
+
+        #boxes-logo:hover{
+            opacity: 1;
+        }
+
+        #profile-picture{
+            height: 30px;
+            width:auto;
+            border-radius: 100%;
+
+        }
+
+       #header-links img, .header-links:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+
+
+
+    </style>
+
+    <header>
+        <nav id="navbar">
+            <ul id="header-links">
+                <li><a href="#blank" class="header-links">Gmail</a></li>
+                <li><a href="#blank" class="header-links">Images</a></li>
+                <li><a href="#blank" class="header-links"></a><img src="boxes-logo.png" id="boxes-logo"></li>
+                <li><a href="blank" class="header-links"></a><img src="profile.jpeg" id="profile-picture"></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="container">
+        <img src="googlelogo.png">
+        <input type="text">
+        <button type="submit">Google Search</button>
+        <button type="submit">I'm Feeling Lucky</button>
+        <p>
+            Google offered in: <a href="#blank">Filipino</a> <a href="blank">Cebuano</a>
+        </p>
+    </main>
+    <footer>
+        <div id="country">
+            <p>Philippines</p>
+        </div>
+        <nav id="footer-links">
+            <ul id="first-list">
+                <li><a href="#blank" class="footer-links">Privacy</a></li>
+                <li><a href="#blank" class="footer-links">Terms</a></li>
+                <li><a href="#blank" class="footer-links">Settings</a></li>
+            </ul>
+            <ul id="second-list">
+                <li><a href="#blank" class="footer-links">Advertising</a></li>
+                <li><a href="#blank" class="footer-links">Business</a></li>
+                <li><a href="#blank" class="footer-links">About</a></li>
+                <li><a href="#blank" class="footer-links">How Search works</a></li>
+            </ul>
+        </nav>
+    </footer>
+</html>
