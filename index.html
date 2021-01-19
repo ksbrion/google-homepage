@@ -1,4 +1,7 @@
 <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
     <style>
         body{
             font-family: arial,sans-serif;
@@ -8,14 +11,16 @@
         }
         #navbar{
             height: 20px;
-            min-width:183px;
-            float: right;            
+            width: 100%;          
             font-size: 12px;
             padding:10px 0;
+            display: flex;
+            justify-content:flex-end;
         }
 
         #header-links{
             height: 100%;
+            min-width:183px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -52,6 +57,18 @@
             cursor: pointer;
         }
 
+        #google-logo{
+            width:50px;
+            margin: 50px;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input{
+            width: 10px;
+        }
 
 
 
@@ -69,7 +86,7 @@
         </nav>
     </header>
     <main id="container">
-        <img src="googlelogo.png">
+        <img src="googlelogo.png" id="google-logo">
         <input type="text">
         <button type="submit">Google Search</button>
         <button type="submit">I'm Feeling Lucky</button>
