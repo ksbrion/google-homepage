@@ -58,18 +58,29 @@
         }
 
         #google-logo{
-            width:50px;
-            margin: 50px;
+            height: 92px;
+            width: 272px;
+            padding: 5%;
         }
         #container{
             display: flex;
             flex-direction: column;
+            padding: 10% 10%;
+            align-items: center;
         }
 
         input{
-            width: 10px;
+            
         }
 
+        #buttons{
+            display: flex;
+            
+        }
+
+        p{
+            font-size: 13px;
+        }
 
 
 
@@ -87,12 +98,16 @@
     </header>
     <main id="container">
         <img src="googlelogo.png" id="google-logo">
-        <input type="text">
-        <button type="submit">Google Search</button>
-        <button type="submit">I'm Feeling Lucky</button>
-        <p>
-            Google offered in: <a href="#blank">Filipino</a> <a href="blank">Cebuano</a>
-        </p>
+        <form id="search-form">
+            <input type="text">
+            <div id="buttons">
+                <button type="submit">Google Search</button>
+                <button type="submit">I'm Feeling Lucky</button>
+            </div>
+            <p>
+                Google offered in: <a href="#blank">Filipino</a> <a href="blank">Cebuano</a>
+            </p>
+        </form>
     </main>
     <footer>
         <div id="country">
